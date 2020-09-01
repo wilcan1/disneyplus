@@ -1,0 +1,539 @@
+@font-face {
+    font-family: Avenir-Roman;
+    src: url("/fonts/Avenir-Roman-12.woff");
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: #040714;
+    font-family: Avenir-Roman;
+    margin: 0;
+}
+
+/* TOUS LES CONTAINERS */
+.container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 580px;
+    width: 100%;
+    padding: 40px;
+}
+
+/* HEADER */
+
+header {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    height: 95px;
+    display: none;
+}
+
+
+#navbar {
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    transition: background-color 0.5s ease-out;
+    -webkit-transition: background-color 0.5s ease-out;
+    -moz-transition: background-color 0.5s ease-out;
+    -ms-transition: background-color 0.5s ease-out;
+    -o-transition: background-color 0.5s ease-out;
+}
+
+#navbar-logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 6%;
+    opacity: 0;
+}
+
+#div-button-nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 84%;
+}
+
+#button-menu-nav-w {
+    
+    opacity: 1;
+    display: flex;
+    margin: 1%;
+    padding: 10px 20px;
+    text-decoration: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color: #0483ee;
+    color: whitesmoke;
+    border-radius: 4px;
+    border: white solid 1px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+#button-menu {
+    opacity: 1;
+    padding: 10px 20px;
+    text-decoration: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color: rgba(0, 0, 0, 0.575);
+    color: whitesmoke;
+    border-radius: 4px;
+    border: white solid 1px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.button-menu:hover {
+    background-color: white;
+    color: #040714;
+}
+
+/* FIN HEADER */
+
+/* HERO */
+
+#hero {
+    background-image: url(../img/olp_hero_desktop_UKI_FR.jpg);
+    background-size: cover;
+    top: 0;
+    background-position: top center;
+    height: 100vh;
+    width: 100%;
+
+}
+
+.overlay-hero {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.heading {
+    color: white;
+    font-size: 2em;
+    margin-bottom: 24px;
+}
+
+.img-load {
+    width: 200px;
+    margin-top: 100px;
+}
+
+.price h3,
+.price-span {
+    margin-bottom: 24px;
+}
+
+.plans {
+    display: flex;
+    color: white;
+}
+
+.plan-p {
+    margin-right: 20px;
+    margin-bottom: 20px;
+    color: hsla(0, 0%, 75.3%, .8);
+    font-size: 1em;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+.price-span {
+    color: hsla(0, 0%, 75.3%, .8);
+    font-size: 0.5em;
+}
+
+.plan-p-bottom {
+    margin-top: 24px;
+    color: hsla(0, 0%, 75.3%, .8);
+    font-size: 1em;
+}
+
+.btn-primary {
+    background-color: #0072d2;
+    padding: 17px 30px;
+    margin-right: 20px;
+    letter-spacing: 1.5px;
+    font-size: 18px;
+    color: white;
+    border: 1px solid transparent;
+    text-transform: uppercase;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+}
+
+hr {
+    visibility: hidden;
+}
+
+.img-bande {
+    width: 605px;
+    height: 40px;
+}
+
+.bande-logo {
+    position: absolute;
+    bottom: 20px;
+    left: 40px;
+}
+
+
+/* FIN HERO */
+
+/* SECTION DYNAMIC */
+.side-reverse {
+    flex-direction: row-reverse;
+}
+
+.heading-wrapper {
+    font-size: 34px;
+    line-height: 1.2;
+}
+
+.subtitle {
+    margin-top: 24px;
+    font-size: 18px;
+    color: hsla(0, 0%, 75.3%, .8);
+}
+
+.wrapper-info {
+    color: white;
+    margin: 24px;
+}
+
+.img-left,
+.img-right {
+    max-height: 630px;
+    max-width: 600px;
+}
+
+#dynamic-content {
+    display: flex;
+}
+
+/* FIN SECTION DYNAMIC */
+
+/* DEVICE SECTION */
+.heading-device {
+    text-align: center;
+    color: white;
+    font-size: 34px;
+}
+
+.items {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    color: hsla(0, 0%, 75.3%, .8);
+    text-align: center;
+    margin-top: 40px;
+}
+
+.device-title {
+    color: white;
+}
+
+.img-device-item {
+    width: 290px;
+    height: 150px;
+}
+
+.device-item h3 {
+    font-size: 22px;
+    margin-bottom: 24px;
+}
+
+.item-list p {
+    margin-bottom: 6px;
+}
+
+/* FIN DEVICE SECTION */
+/* FOOTER */
+.img-footer {
+    height: 50px;
+    width: 80px;
+}
+
+.footer {
+    padding: 26px 8px;
+    text-align: center;
+    color: hsla(0, 0%, 75.3%, .8);
+}
+
+.footer .links a {
+    display: inline-block;
+    cursor: pointer;
+    font-size: 12px;
+    padding: 8px 12px;
+    text-decoration: none;
+    color: hsla(0, 0%, 75.3%, .8);
+}
+
+.copyright {
+    font-size: 12px;
+}
+
+/* FIN FOOTER */
+
+/* MEDIAS QUERIES / TABLETTE */
+@media only screen and (max-width:768px) {
+    .container {
+        height: 400px;
+    }
+
+    .heading {
+        color: white;
+        font-size: 1.2em;
+        margin-bottom: 50px;
+    }
+
+    .img-load {
+        width: 100px;
+        margin-top: 100px;
+    }
+
+    .price h3,
+    .price-span {
+        margin-bottom: 12px;
+    }
+
+    .plan-p {
+        margin-right: 20px;
+        margin-bottom: 20px;
+        color: hsla(0, 0%, 75.3%, .8);
+        font-size: 0.7em;
+    }
+
+    .btn-primary {
+        padding: 12px 18px;
+
+        font-size: 10px;
+    }
+
+    .img-left,
+    .img-right {
+        height: 300px;
+        max-width: 300px;
+    }
+
+    .img-bande {
+        width: 350px;
+        height: 20px;
+    }
+
+    .heading-wrapper {
+        font-size: 17px;
+        line-height: 1;
+    }
+
+    .subtitle {
+        margin-top: 12px;
+        font-size: 12px;
+    }
+
+    .wrapper-info {
+        margin: 12px;
+    }
+
+    .heading-device {
+        font-size: 18px;
+    }
+
+    .items {
+
+        flex-wrap: wrap;
+    }
+
+    .img-device-item {
+        width: 200px;
+        height: 75px;
+    }
+
+    .device-item h3 {
+        font-size: 12px;
+        margin-bottom: 12px;
+    }
+
+    .item-list p {
+        margin-bottom: 6px;
+        font-size: 11px;
+    }
+
+    /* FOOTER */
+    .img-footer {
+        height: 50px;
+        width: 80px;
+
+    }
+
+    .copyright {
+        font-size: 10px;
+    }
+}
+
+/* MEDIAS QUERIES / SMARTPHONE */
+@media only screen and (max-width:480px) {
+
+    /* HERO */
+    #hero {
+        background-image: url(../img/olp_hero_mobile_UKI_FR.jpg);
+        height: 600px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: top center;
+        width: 100%;
+    }
+
+    .overlay-hero {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        padding: 120px 40px;
+    }
+
+    .img-load .logo-dis {
+        margin: 400px 0px 0px 40px;
+        width: 180px;
+        height: auto;
+    }
+
+    .plans {
+        display: block;
+        flex-direction: column;
+    }
+
+    .price {
+
+        margin: 20px;
+    }
+
+    hr {
+        visibility: visible;
+    }
+
+    .overlay-hero {
+        display: block;
+        box-sizing: content-box;
+    }
+
+    .price h3 {
+        width: 100%;
+        height: auto;
+    }
+
+    .dynamic-content,
+    .side-reverse {
+        flex-wrap: wrap;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .side-reverse {
+        flex-direction: row-reverse;
+        justify-content: center;
+    }
+
+    .dynamic-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .img-bande {
+        display: none;
+    }
+
+    .heading {
+        color: white;
+        font-size: 1em;
+        margin-bottom: 10px;
+    }
+
+    .img-load {
+        width: 70px;
+        margin-top: 10px;
+    }
+
+    .price h3,
+    .price-span {
+        margin-bottom: 5px;
+    }
+
+    .plan-p {
+        margin-right: 10px;
+        margin-bottom: 10px;
+        color: hsla(0, 0%, 75.3%, .8);
+        font-size: 0.6em;
+    }
+
+    .plan-p-bottom {
+        font-size: 0.6em;
+        margin-bottom: 50px;
+    }
+
+    .btn-primary {
+        padding: 10px 16px;
+        font-size: 9px;
+    }
+
+    .img-left,
+    .img-right {
+        height: 300px;
+        width: 300px;
+        margin: auto;
+    }
+
+    .heading-wrapper {
+        font-size: 15px;
+        line-height: 1px;
+    }
+
+    .subtitle {
+        margin-top: 12px;
+        font-size: 12px;
+    }
+
+    .heading-device {
+        margin-top: 60px;
+        font-size: 16px;
+    }
+
+    .items {
+        flex-wrap: wrap;
+    }
+
+    /* FOOTER */
+    .img-footer {
+        height: 50px;
+        width: 80px;
+    }
+
+    .copyright {
+        font-size: 10px;
+    }
+}
